@@ -1,7 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:html/parser.dart' as parser;
-import 'package:http/http.dart' as http;
+import 'package:portfolio/model/lang_stat.dart';
 
 import '../../../generated/assets.dart';
 import '../../../generated/constants.dart';
@@ -17,8 +16,7 @@ class MostUsedProgrammingLanguage extends StatefulWidget {
 }
 
 class _MostUsedProgrammingLanguageState extends State<MostUsedProgrammingLanguage> {
-  List<String> languageList = ["Dart", "Java", "Kotlin", "TypeScript", "Python"];
-  List<double> languagePercent = [45.76, 23.37, 23, 4.09, 3.78];
+  List<LangStat> languageStat = [];
   List<String> languageLogo = [
     Assets.dartLogoPng,
     Assets.javaLogoPng,
@@ -30,7 +28,7 @@ class _MostUsedProgrammingLanguageState extends State<MostUsedProgrammingLanguag
   @override
   void initState() {
     super.initState();
-    // getLanguagePercentages(languageList, languagePercent);
+    getLanguagePercentages(languageStat);
   }
 
   @override
@@ -52,12 +50,12 @@ class _MostUsedProgrammingLanguageState extends State<MostUsedProgrammingLanguag
         ),
         SizedBox(
           child: ListView.builder(
-            itemCount: languageList.length,
+            itemCount: languageStat.length,
             shrinkWrap: true,
             itemBuilder: (context, index) {
               return AnimatedLinearProgressIndicator(
-                percentage: languagePercent[index],
-                label: languageList[index],
+                percentage: languageStat[index].languageRate,
+                label: languageStat[index].languageName,
                 assetLogo: languageLogo[index],
               );
             },
@@ -66,42 +64,39 @@ class _MostUsedProgrammingLanguageState extends State<MostUsedProgrammingLanguag
         Text(
           "Stat of used language rate from github",
           style: Theme.of(context).textTheme.bodyText2!.copyWith(
-            fontFamily: Assets.fontsSVNGilroyRegular,
-            fontStyle: FontStyle.italic,
-            color: bodyTextColor,
-            height: 1.5,
-          ),
+                fontFamily: Assets.fontsSVNGilroyRegular,
+                fontStyle: FontStyle.italic,
+                color: bodyTextColor,
+                height: 1.5,
+              ),
           textAlign: TextAlign.center,
         ),
       ],
     );
   }
 
-  Future<void> getLanguagePercentages(List<String> languageList, List<double> languagePercent) async {
+  Future<void> getLanguagePercentages(List<LangStat> languageStat) async {
     final dio = Dio();
 
-    final response = await dio.get('http://github-readme-stats.vercel.app/api/top-langs/?username=hoangvu75&hide=javascript');
-    final document = parser.parse(response.data);
-    final languages = document.querySelectorAll('.lang-name');
+    final response = await dio.get(
+      'https://hv0357-portfolio-server.fly.dev/get-most-used-language',
+      options: Options(
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Method': 'POST, GET, OPTIONS, DELETE',
+        },
+      ),
+    );
 
-    print(response.toString());
-
-    for (int i = 0; i < languages.length; i++) {
-      if (i % 2 == 0) {
-        setState(() {
-          languageList.add(languages[i].text);
-        });
-      } else {
-        setState(() {
-          languagePercent.add(
-            double.parse(
-              (languages[i].text.replaceAll("%", "").replaceAll(".", "").length == 4)
-                  ? "0.${languages[i].text.replaceAll("%", "").replaceAll(".", "")}"
-                  : "0.0${languages[i].text.replaceAll("%", "").replaceAll(".", "")}",
-            ),
-          );
-        });
-      }
+    for (int i = 0; i < response.data['langList'].length; i++) {
+      setState(() {
+        languageStat.add(
+          LangStat(
+            response.data['langList'][i]['langName'],
+            double.parse((response.data['langList'][i]['langRate'].replaceAll("%", ""))) / 100,
+          ),
+        );
+      });
     }
   }
 }

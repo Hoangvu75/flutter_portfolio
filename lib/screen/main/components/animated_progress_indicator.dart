@@ -87,7 +87,7 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
       child: TweenAnimationBuilder(
         tween: Tween<double>(
           begin: 0,
-          end: percentage / 100,
+          end: percentage,
         ),
         duration: defaultDuration_4,
         builder: (context, double value, child) => Column(
@@ -121,9 +121,6 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
                   ("${(value * 100)}".length > 5)
                       ? "${double.parse((value * 100).toString().substring(0, 5))}%"
                       : "${double.parse((value * 100).toString())}%",
-                  // ("${(value)}".length > 5)
-                  //     ? "${(value).toString().substring(0, 5)}%"
-                  //     : "${(value)}%",
                 )
               ],
             ),
