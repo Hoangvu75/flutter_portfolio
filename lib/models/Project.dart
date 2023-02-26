@@ -59,7 +59,7 @@ List<Project> demoProjects = [
     sourceCode: "https://github.com/Hoangvu75/nodejs_student_manager",
     videoDemo: "",
     playStore: "",
-    liveDemo: "https://nodejsstudentmanager-production.up.railway.app/#/",
+    liveDemo: "https://fly.io/apps/nodejs-student-manager",
     background: Assets.studentManagerBgPng,
   ),
   Project(
