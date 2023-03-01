@@ -50,12 +50,12 @@ class HomeBanner extends StatelessWidget {
                 Text(
                   "Welcome to my workspace. I'm Hoang Vu!",
                   style: Responsive.isDesktop(context)
-                      ? Theme.of(context).textTheme.headline3!.copyWith(
+                      ? Theme.of(context).textTheme.displaySmall!.copyWith(
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
                             fontFamily: Assets.fontsSVNGilroyBold,
                           )
-                      : Theme.of(context).textTheme.headline5!.copyWith(
+                      : Theme.of(context).textTheme.headlineSmall!.copyWith(
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
                             fontFamily: Assets.fontsSVNGilroyBold,
@@ -85,7 +85,7 @@ class MyBuildAnimatedText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTextStyle(
-      style: Theme.of(context).textTheme.subtitle1!.copyWith(
+      style: Theme.of(context).textTheme.titleMedium!.copyWith(
             fontFamily: Assets.fontsSVNGilroyRegular,
           ),
       maxLines: 1,

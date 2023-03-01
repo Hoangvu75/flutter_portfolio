@@ -48,6 +48,7 @@ dependencies:
   flutter_animate: ^4.0.0
   web_scraper: ^0.1.4
   dio: ^5.0.1
+  timelines: ^0.1.0
 
 dev_dependencies:
   flutter_test:

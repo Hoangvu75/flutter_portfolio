@@ -43,7 +43,7 @@ class _MostUsedProgrammingLanguageState extends State<MostUsedProgrammingLanguag
           ),
           child: Text(
             "Most used programming languages",
-            style: Theme.of(context).textTheme.subtitle2!.copyWith(
+            style: Theme.of(context).textTheme.titleSmall!.copyWith(
                   fontFamily: Assets.fontsSVNGilroySemiBold,
                 ),
           ),
@@ -63,7 +63,7 @@ class _MostUsedProgrammingLanguageState extends State<MostUsedProgrammingLanguag
         ),
         Text(
           "Stat of used language rate from github",
-          style: Theme.of(context).textTheme.bodyText2!.copyWith(
+          style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                 fontFamily: Assets.fontsSVNGilroyRegular,
                 fontStyle: FontStyle.italic,
                 color: bodyTextColor,

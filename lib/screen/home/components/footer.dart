@@ -28,7 +28,7 @@ class Footer extends StatelessWidget {
               children: [
                 Text(
                   "Contact me via",
-                  style: Theme.of(context).textTheme.headline6!.copyWith(
+                  style: Theme.of(context).textTheme.titleLarge!.copyWith(
                         fontFamily: Assets.fontsSVNGilroySemiBold,
                       ),
                 ),
@@ -46,7 +46,7 @@ class Footer extends StatelessWidget {
                     ),
                     Text(
                       "(+84) 941290612",
-                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                      style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                             height: 1.5,
                             fontFamily: Assets.fontsSVNGilroyRegular,
                           ),
@@ -67,7 +67,7 @@ class Footer extends StatelessWidget {
                     ),
                     Text(
                       "vuhuyhoang230507@gmail.com",
-                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                      style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                             height: 1.5,
                             fontFamily: Assets.fontsSVNGilroyRegular,
                           ),
@@ -80,7 +80,7 @@ class Footer extends StatelessWidget {
                 Center(
                   child: Text(
                     "This portfolio page created by Hoang Vu using Flutter Web framework.",
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                           height: 1.5,
                           fontFamily: Assets.fontsSVNGilroyRegular,
                         ),

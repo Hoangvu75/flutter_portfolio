@@ -24,7 +24,7 @@ class MyMajor extends StatelessWidget {
         ),
         Text(
           "My major",
-          style: Theme.of(context).textTheme.headline6!.copyWith(
+          style: Theme.of(context).textTheme.titleLarge!.copyWith(
                 color: primaryColor,
                 fontFamily: Assets.fontsSVNGilroySemiBold,
               ),
@@ -108,7 +108,7 @@ class _MajorCardState extends State<MajorCard> {
           children: [
             Text(
               widget.major.name!,
-              style: Theme.of(context).textTheme.subtitle2!.copyWith(
+              style: Theme.of(context).textTheme.titleSmall!.copyWith(
                     fontFamily: Assets.fontsSVNGilroySemiBold,
                   ),
             ),
@@ -142,7 +142,7 @@ class _MajorCardState extends State<MajorCard> {
                         },
                         child: Text(
                           "Why ${widget.major.tech}?",
-                          style: Theme.of(context).textTheme.subtitle2!.copyWith(
+                          style: Theme.of(context).textTheme.titleSmall!.copyWith(
                                 fontFamily: Assets.fontsSVNGilroySemiBold,
                                 color: primaryColor,
                               ),

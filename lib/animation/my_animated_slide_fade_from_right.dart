@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
-class MyAnimatedSlideFadeFromLeftWidget extends StatefulWidget {
-  const MyAnimatedSlideFadeFromLeftWidget({
+class MyAnimatedSlideFadeFromRightWidget extends StatefulWidget {
+  const MyAnimatedSlideFadeFromRightWidget({
     Key? key, required this.animatedKey, required this.child, required this.repeat
   }) : super(key: key);
 
@@ -11,10 +11,10 @@ class MyAnimatedSlideFadeFromLeftWidget extends StatefulWidget {
   final bool repeat;
 
   @override
-  State<MyAnimatedSlideFadeFromLeftWidget> createState() => _MyAnimatedSlideFadeFromLeftWidgetState();
+  State<MyAnimatedSlideFadeFromRightWidget> createState() => _MyAnimatedSlideFadeFromRightWidgetState();
 }
 
-class _MyAnimatedSlideFadeFromLeftWidgetState extends State<MyAnimatedSlideFadeFromLeftWidget> {
+class _MyAnimatedSlideFadeFromRightWidgetState extends State<MyAnimatedSlideFadeFromRightWidget> {
   bool _isVisible = false;
 
   @override
@@ -45,7 +45,7 @@ class _MyAnimatedSlideFadeFromLeftWidgetState extends State<MyAnimatedSlideFadeF
         opacity: _isVisible ? 1 : 0,
         duration: const Duration(milliseconds: 500),
         child: AnimatedSlide(
-          offset: _isVisible ? const Offset(0, 0) : const Offset(-0.05, 0),
+          offset: _isVisible ? const Offset(0, 0) : const Offset(0.05, 0),
           duration: const Duration(milliseconds: 500),
           child: widget.child,
         ),

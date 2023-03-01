@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/animation/my_animated_slide_from_left_widget.dart';
 import 'package:portfolio/generated/assets.dart';
 import 'package:portfolio/generated/string_text.dart';
 import 'package:portfolio/responsive.dart';
@@ -25,7 +24,7 @@ class MyService extends StatelessWidget {
         ),
         Text(
           "Which services I can provide?",
-          style: Theme.of(context).textTheme.headline6!.copyWith(
+          style: Theme.of(context).textTheme.titleLarge!.copyWith(
                 color: primaryColor,
                 fontFamily: Assets.fontsSVNGilroySemiBold,
               ),
@@ -77,7 +76,7 @@ class WindowsViewMyService extends StatelessWidget {
                     children: [
                       Text(
                         "Mobile Development",
-                        style: Theme.of(context).textTheme.headline6!.copyWith(
+                        style: Theme.of(context).textTheme.titleLarge!.copyWith(
                               color: primaryColor,
                               fontFamily: Assets.fontsSVNGilroyBold,
                             ),
@@ -115,7 +114,7 @@ class WindowsViewMyService extends StatelessWidget {
                     children: [
                       Text(
                         "Web Development",
-                        style: Theme.of(context).textTheme.headline6!.copyWith(
+                        style: Theme.of(context).textTheme.titleLarge!.copyWith(
                               color: primaryColor,
                               fontFamily: Assets.fontsSVNGilroyBold,
                             ),
@@ -183,7 +182,7 @@ class WindowsViewMyService extends StatelessWidget {
                     children: [
                       Text(
                         "Backend Development",
-                        style: Theme.of(context).textTheme.headline6!.copyWith(
+                        style: Theme.of(context).textTheme.titleLarge!.copyWith(
                           color: primaryColor,
                           fontFamily: Assets.fontsSVNGilroyBold,
                         ),
@@ -249,7 +248,7 @@ class MobileViewMyService extends StatelessWidget {
                   children: [
                     Text(
                       "Mobile Development",
-                      style: Theme.of(context).textTheme.headline6!.copyWith(
+                      style: Theme.of(context).textTheme.titleLarge!.copyWith(
                             color: primaryColor,
                             fontFamily: Assets.fontsSVNGilroyBold,
                           ),
@@ -300,7 +299,7 @@ class MobileViewMyService extends StatelessWidget {
                   children: [
                     Text(
                       "Web Development",
-                      style: Theme.of(context).textTheme.headline6!.copyWith(
+                      style: Theme.of(context).textTheme.titleLarge!.copyWith(
                             color: primaryColor,
                             fontFamily: Assets.fontsSVNGilroyBold,
                           ),
@@ -351,7 +350,7 @@ class MobileViewMyService extends StatelessWidget {
                   children: [
                     Text(
                       "Backend Development",
-                      style: Theme.of(context).textTheme.headline6!.copyWith(
+                      style: Theme.of(context).textTheme.titleLarge!.copyWith(
                             color: primaryColor,
                             fontFamily: Assets.fontsSVNGilroyBold,
                           ),

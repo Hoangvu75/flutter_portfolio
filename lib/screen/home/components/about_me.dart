@@ -22,7 +22,7 @@ class AboutMe extends StatelessWidget {
         ),
         Text(
           "About me",
-          style: Theme.of(context).textTheme.headline6!.copyWith(
+          style: Theme.of(context).textTheme.titleLarge!.copyWith(
                 color: primaryColor,
                 fontFamily: Assets.fontsSVNGilroySemiBold,
               ),
@@ -41,7 +41,7 @@ class AboutMe extends StatelessWidget {
                       animatedTexts: [
                         TypewriterAnimatedText(
                           StringText.aboutMe,
-                          textStyle: Theme.of(context).textTheme.bodyText1!.copyWith(
+                          textStyle: Theme.of(context).textTheme.bodyLarge!.copyWith(
                                 color: Colors.white,
                                 height: 1.5,
                                 fontFamily: Assets.fontsSVNGilroyRegular,
@@ -69,7 +69,7 @@ class AboutMe extends StatelessWidget {
                 animatedTexts: [
                   TypewriterAnimatedText(
                     StringText.aboutMe,
-                    textStyle: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    textStyle: Theme.of(context).textTheme.bodyLarge!.copyWith(
                           color: Colors.white,
                           height: 1.5,
                           fontFamily: Assets.fontsSVNGilroyRegular,

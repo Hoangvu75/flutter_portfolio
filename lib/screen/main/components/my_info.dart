@@ -27,7 +27,7 @@ class MyInfo extends StatelessWidget {
             const Spacer(),
             Text(
               "Vu Huy Hoang",
-              style: Theme.of(context).textTheme.subtitle2!.copyWith(
+              style: Theme.of(context).textTheme.titleSmall!.copyWith(
                     fontFamily: Assets.fontsSVNGilroySemiBold,
                   ),
             ),

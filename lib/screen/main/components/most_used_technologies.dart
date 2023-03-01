@@ -19,7 +19,7 @@ class MostUsedTechnologies extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: defaultPadding),
           child: Text(
             "Most used technologies",
-            style: Theme.of(context).textTheme.subtitle2!.copyWith(
+            style: Theme.of(context).textTheme.titleSmall!.copyWith(
               fontFamily: Assets.fontsSVNGilroySemiBold,
             ),
           ),

@@ -52,7 +52,7 @@ class ProjectInfoSheet extends StatelessWidget {
                         ),
                         Text(
                           project.title!,
-                          style: Theme.of(context).textTheme.headline5!.copyWith(
+                          style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                                 color: Colors.white,
                                 fontFamily: Assets.fontsSVNGilroyBold,
                               ),
@@ -62,7 +62,7 @@ class ProjectInfoSheet extends StatelessWidget {
                         ),
                         Text(
                           project.description!,
-                          style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                          style: Theme.of(context).textTheme.titleMedium!.copyWith(
                                 height: 1.5,
                                 color: Colors.white,
                                 fontFamily: Assets.fontsSVNGilroyRegular,

@@ -25,7 +25,7 @@ class MyProjects extends StatelessWidget {
         ),
         Text(
           "My projects",
-          style: Theme.of(context).textTheme.headline6!.copyWith(
+          style: Theme.of(context).textTheme.titleLarge!.copyWith(
                 color: primaryColor,
                 fontFamily: Assets.fontsSVNGilroySemiBold,
               ),
@@ -107,7 +107,7 @@ class ProjectCard extends StatelessWidget {
                     Text(
                       project.title!,
                       maxLines: 2,
-                      style: Theme.of(context).textTheme.headline6!.copyWith(
+                      style: Theme.of(context).textTheme.titleLarge!.copyWith(
                             fontFamily: Assets.fontsSVNGilroySemiBold,
                           ),
                     ),

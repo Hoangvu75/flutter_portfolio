@@ -11,9 +11,9 @@ class Knowledge extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  List<Widget> knowledgeList = [
+  final List<Widget> knowledgeList = [
     const KnowledgeText(
-      text: "Java, Kotlin, Javascript, Dart",
+      text: "Language: Java, Kotlin, Javascript, Dart",
     ),
     const KnowledgeText(
       text: "Android pattern: MVC, MVVM",
@@ -22,16 +22,16 @@ class Knowledge extends StatelessWidget {
       text: "Flutter state: BloC, GetX, Provider",
     ),
     const KnowledgeText(
-      text: "Node.js pattern: MVC",
+      text: "Node Express pattern: MVC",
     ),
     const KnowledgeText(
-      text: "Git, Fork, Docker, Postman",
+      text: "Dev-tools: Git, Fork, Docker, Postman",
     ),
     const KnowledgeText(
-      text: "MongoDB, Firebase",
+      text: "Database service: MongoDB, Firebase",
     ),
     const KnowledgeText(
-      text: "Restful API, Socket",
+      text: "Network: Restful API, Socket.io",
     ),
   ];
 
@@ -92,18 +92,26 @@ class KnowledgeText extends StatelessWidget {
         bottom: defaultPadding / 2,
       ),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SvgPicture.asset(
-            Assets.icCheckSvg,
-            color: primaryColor,
+          Padding(
+            padding: const EdgeInsets.only(top: 2),
+            child: SvgPicture.asset(
+              Assets.icCheckSvg,
+              color: primaryColor,
+            ),
           ),
           const SizedBox(
             width: defaultPadding / 2,
           ),
-          Text(
-            text,
-            style: const TextStyle(
-              fontFamily: Assets.fontsSVNGilroyRegular,
+          Flexible(
+            child: Text(
+              text,
+              style: const TextStyle(
+                fontFamily: Assets.fontsSVNGilroyRegular,
+                height: 1.5,
+              ),
+              maxLines: 2,
             ),
           ),
         ],

@@ -27,7 +27,7 @@ class ViewCVButton extends StatelessWidget {
                 Text(
                   "See my CV",
                   style: TextStyle(
-                    color: isHovered ? primaryColor : Theme.of(context).textTheme.bodyText1!.color,
+                    color: isHovered ? primaryColor : Theme.of(context).textTheme.bodyLarge!.color,
                     fontFamily: Assets.fontsSVNGilroyBold,
                   ),
                 ),

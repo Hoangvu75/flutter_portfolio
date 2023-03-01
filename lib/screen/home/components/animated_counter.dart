@@ -22,7 +22,7 @@ class AnimatedCounter extends StatelessWidget {
       duration: defaultDuration_6,
       builder: (context, value, child) => Text(
         "$value$text",
-        style: Theme.of(context).textTheme.headline6!.copyWith(
+        style: Theme.of(context).textTheme.titleLarge!.copyWith(
               color: primaryColor,
               fontFamily: Assets.fontsSVNGilroySemiBold,
             ),

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
-import 'package:portfolio/responsive.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
 import '../generated/constants.dart';

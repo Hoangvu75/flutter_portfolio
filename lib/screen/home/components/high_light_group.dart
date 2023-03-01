@@ -100,7 +100,7 @@ class HighLight extends StatelessWidget {
         counter,
         Text(
           label!,
-          style: Theme.of(context).textTheme.subtitle2!.copyWith(
+          style: Theme.of(context).textTheme.titleSmall!.copyWith(
             fontFamily: Assets.fontsSVNGilroySemiBold,
           ),
         )
