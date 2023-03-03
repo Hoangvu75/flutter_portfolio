@@ -49,6 +49,10 @@ dependencies:
   web_scraper: ^0.1.4
   dio: ^5.0.1
   timelines: ^0.1.0
+  video_player: ^2.5.3
+  chewie: ^1.4.0
+  better_player: ^0.0.83
+  youtube_player_flutter: ^8.1.2
 
 dev_dependencies:
   flutter_test:
