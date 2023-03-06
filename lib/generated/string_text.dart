@@ -30,16 +30,19 @@ class StringText {
   static const String pjMovieDescription =
       "Application for movie lovers, to catch information about trending and popular movies. Users can also "
       "search for any movie they like.\n\nTechnology used:\n- Flutter\n- Postman\n- Github\n- Android Studio";
+  static const String cr7LandingPageDescription =
+      "A simple landing page introduce about Cristiano Ronaldo.\n\nTechnology used:\n- Flutter\n- Github\n- "
+      "Android Studio\n- HTML/CSS";
   static const String pjSocialNetworkDescription =
       "A simple social network, users can add friend, post status, chat and interact with others.\n\nTechnology "
       "used:\n- Kotlin\n- Github\n- Firebase\n- Android Studio";
-  static const String pjHoangVuTechBlogDescription =
-      "This is my own blog about Technology. Everyone can come here and reach the lasted update of new "
-      "technology in many fields such as Web, Mobile, AI, Game,...\n\nTechnology used:\n- Flutter\n- Github\n- "
-      "Vercel\n- HTML/CSS";
+  static const String pjLightNovelDescription =
+      "This is an application to read overview and buy light novels, can be used to search for novels as well as "
+      "following newest and popular novels\n\nTechnology used:\n- Flutter\n- Github\n- Android Studio";
   static const String pjWeatherDescription =
       "Users can use this application to get information about weather at their location, and can also get data "
-      "of weather in anywhere on the world.\n\nTechnology used:\n- Java\n- Kotlin\n- Github\n- Android Studio";
+      "of weather in anywhere on the world. This app using BLoC pattern.\n\nTechnology used:\n- Java\n- Kotlin\n- "
+      "Github\n- Android Studio";
   static const String pjStudentManagerDescription =  "Backend project is a student management system that allows"
       " users to perform various CRUD (Create, Read, Update, Delete) operations on a database of student records"
       ". Using HTTP methods like GET, POST, PUT, and DELETE, users can add new students to the database, "

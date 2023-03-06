@@ -16,11 +16,12 @@ class Assets {
   static const String socialNetworkBgJpg = "assets/images/social_network_background.jpg";
   static const String chatBgPng = "assets/images/chat_background.png";
   static const String movieBgJpg = "assets/images/movie_background.jpg";
+  static const String cr7LandingPageBgPng = "assets/images/cr7_page_background.png";
   static const String weatherBgJpg = "assets/images/weather_background.jpg";
   static const String techdayBgJpg = "assets/images/techday_background.jpg";
   static const String xinhxinhBgPng = "assets/images/xinhxinh_background.png";
   static const String studentManagerBgPng = "assets/images/student_manager_background.png";
-  static const String hoangVuTechBlogBgPng = "assets/images/hoangvu_techblog_background.png";
+  static const String lnBackgroundJpg = "assets/images/ln_background.jpg";
   static const String webDevJpg = "assets/images/web_dev.jpg";
   static const String mobileDevJpg = "assets/images/mobile_dev.jpg";
   static const String backendDevPng = "assets/images/backend_dev.png";

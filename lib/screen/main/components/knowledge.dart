@@ -19,7 +19,7 @@ class Knowledge extends StatelessWidget {
       text: "Android pattern: MVC, MVVM",
     ),
     const KnowledgeText(
-      text: "Flutter state: BloC, GetX, Provider",
+      text: "Flutter state: BLoC, GetX, Provider",
     ),
     const KnowledgeText(
       text: "Node Express pattern: MVC",
@@ -57,6 +57,7 @@ class Knowledge extends StatelessWidget {
         ),
         SizedBox(
           child: ListView.builder(
+            physics: const NeverScrollableScrollPhysics(),
             itemCount: knowledgeList.length,
             shrinkWrap: true,
             itemBuilder: (context, index) {

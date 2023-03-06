@@ -50,6 +50,7 @@ class _MostUsedProgrammingLanguageState extends State<MostUsedProgrammingLanguag
         ),
         SizedBox(
           child: ListView.builder(
+            physics: const NeverScrollableScrollPhysics(),
             itemCount: languageStat.length,
             shrinkWrap: true,
             itemBuilder: (context, index) {
@@ -79,7 +80,7 @@ class _MostUsedProgrammingLanguageState extends State<MostUsedProgrammingLanguag
     final dio = Dio();
 
     final response = await dio.get(
-      'https://hv0357-portfolio-server.fly.dev/get-most-used-language',
+      'https://nodejshv0357portfolioserver-production.up.railway.app/get-most-used-language',
       options: Options(
         headers: {
           'Access-Control-Allow-Origin': '*',
