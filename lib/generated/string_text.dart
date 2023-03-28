@@ -77,7 +77,7 @@ class StringText {
       "high-quality solution that meets your needs and exceeds your expectations.";
   static const String backendService = "As a seasoned software developer, I am proud to offer my expertise in "
       "backend development to clients and organizations. I have extensive experience with a variety of "
-      "programming languages and technologies, including Node.js, Express, MongoDB, and Firebase.\n\nWith my "
+      "programming languages and technologies, including Node.js, Express.js, MongoDB, and Firebase.\n\nWith my "
       "expertise in these technologies, I am well equipped to provide high-quality backend development services "
       "to clients and organizations. Whether you are looking to build a new application from scratch, or to "
       "enhance an existing one, I am confident that I can help you achieve your goals and deliver a solution "

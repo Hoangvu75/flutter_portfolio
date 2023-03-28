@@ -13,25 +13,22 @@ class Knowledge extends StatelessWidget {
 
   final List<Widget> knowledgeList = [
     const KnowledgeText(
-      text: "Language: Java, Kotlin, Javascript, Dart",
+      text: "Language: Java, Kotlin, Javascript, Dart, Swift",
     ),
     const KnowledgeText(
-      text: "Android pattern: MVC, MVVM",
+      text: "Framework: Jetpack Compose, Node.js, Flutter, SwiftUI",
     ),
     const KnowledgeText(
-      text: "Flutter state: BLoC, GetX, Provider",
-    ),
-    const KnowledgeText(
-      text: "Node Express pattern: MVC",
+      text: "Software design pattern: MVC, MVVM",
     ),
     const KnowledgeText(
       text: "Dev-tools: Git, Fork, Docker, Postman",
     ),
     const KnowledgeText(
-      text: "Database service: MongoDB, Firebase",
+      text: "Cloud service: Firebase, AWS",
     ),
     const KnowledgeText(
-      text: "Network: Restful API, Socket.io",
+      text: "Networking: RESTful API, Socket.io",
     ),
   ];
 
