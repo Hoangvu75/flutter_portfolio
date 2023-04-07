@@ -23,6 +23,10 @@ class StringText {
       "time significantly, removes cost and enables you launch your app that much faster with high quality of "
       "performance.";
 
+  static const String pjCryptoFinanceDescription =
+      "Application to help users following the information of crypto as well as tracking fluctuations. "
+      "Front-end with Flutter and back-end with node.js. Technology used:\n- Flutter\n- Node.js-\n- Express.js"
+      "\n- Github\n- Postman\n- Android Studio\n- Visual Studio Code";
   static const String pjChatDescription =
       "This is a normal chat application, to send messages, video call with others. I developed both front-end "
       "and back-end.\n\nTechnology used:\n- Flutter\n- Firebase\n- Node.js\n- Express.js\n- MongoDB\n- Github\n-"

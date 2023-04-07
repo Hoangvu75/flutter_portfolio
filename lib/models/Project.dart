@@ -9,6 +9,15 @@ class Project {
 
 List<Project> demoProjects = [
   Project(
+    title: "Crypto Finance",
+    description: StringText.pjCryptoFinanceDescription,
+    sourceCode: "https://github.com/Hoangvu75/flutter_crypto_finance",
+    videoDemo: "https://www.youtube.com/watch?v=CEZ-543k5mI",
+    playStore: "",
+    liveDemo: "",
+    background: Assets.cryptoFinanceBgJpg,
+  ),
+  Project(
     title: "Chat",
     description: StringText.pjChatDescription,
     sourceCode: "https://github.com/Hoangvu75/flutter_chatapp",

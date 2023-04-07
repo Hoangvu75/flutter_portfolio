@@ -15,6 +15,7 @@ class Assets {
   static const String flutterPng = "assets/images/flutter.png";
   static const String socialNetworkBgJpg = "assets/images/social_network_background.jpg";
   static const String chatBgPng = "assets/images/chat_background.png";
+  static const String cryptoFinanceBgJpg = "assets/images/crypto_finance_background.jpg";
   static const String movieBgJpg = "assets/images/movie_background.jpg";
   static const String cr7LandingPageBgPng = "assets/images/cr7_page_background.png";
   static const String weatherBgJpg = "assets/images/weather_background.jpg";
