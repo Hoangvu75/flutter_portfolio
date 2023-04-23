@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../generated/constants.dart';
 
@@ -73,12 +74,10 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
     Key? key,
     required this.percentage,
     required this.label,
-    required this.assetLogo,
   }) : super(key: key);
 
   final double percentage;
   final String label;
-  final String assetLogo;
 
   @override
   Widget build(BuildContext context) {
@@ -99,12 +98,12 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(3),
-                      child: Image.asset(
-                        assetLogo,
+                      child: SvgPicture.network(
+                        "https://raw.githubusercontent.com/devicons/devicon/master/icons/${label.toLowerCase()}/${label.toLowerCase()}-original.svg",
                         width: 15,
                         height: 15,
                         fit: BoxFit.cover,
-                      ),
+                      )
                     ),
                     const SizedBox(
                       width: defaultPadding / 2,

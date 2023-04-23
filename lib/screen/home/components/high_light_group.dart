@@ -10,9 +10,9 @@ class HighLightGroup extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  final dynamic highlight_1 = {'numb': 12, 'text': "months of experience in software"};
-  final dynamic highlight_2 = {'numb': 6, 'text': "months working as mobile developer"};
-  final dynamic highlight_3 = {'numb': 10, 'text': "mobile Flutter/Android projects"};
+  final dynamic highlight_1 = {'numb': 18, 'text': "months of experience in software"};
+  final dynamic highlight_2 = {'numb': 12, 'text': "months working as mobile developer"};
+  final dynamic highlight_3 = {'numb': 15, 'text': "mobile & backend projects"};
 
   @override
   Widget build(BuildContext context) {

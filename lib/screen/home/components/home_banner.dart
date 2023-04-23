@@ -132,7 +132,7 @@ class AnimatedText extends StatelessWidget {
           speed: const Duration(milliseconds: 60),
         ),
         TyperAnimatedText(
-          "Flutter and Android developments",
+          "Flutter and Android/iOS developments",
           speed: const Duration(milliseconds: 60),
         ),
         TyperAnimatedText(

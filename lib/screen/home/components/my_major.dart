@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_scale_tap/flutter_scale_tap.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:portfolio/animation/my_animated_opacity_widget.dart';
 import 'package:portfolio/animation/my_animated_scale_widget.dart';
 import 'package:portfolio/generated/assets.dart';
@@ -141,7 +142,7 @@ class _MajorCardState extends State<MajorCard> {
                           });
                         },
                         child: Text(
-                          "Why ${widget.major.tech}?",
+                          "Technical Stack",
                           style: Theme.of(context).textTheme.titleSmall!.copyWith(
                                 fontFamily: Assets.fontsSVNGilroySemiBold,
                                 color: primaryColor,
@@ -156,21 +157,34 @@ class _MajorCardState extends State<MajorCard> {
             Visibility(
               visible: _descriptionVisible,
               child: MyAnimatedOpacityWidget(
-                animatedKey: '${widget.major.tech}',
+                animatedKey: '${widget.major.name}',
                 repeat: false,
                 child: Column(
                   children: [
                     const SizedBox(
-                      height: defaultPadding / 2,
+                      height: defaultPadding,
                     ),
-                    Text(
-                      widget.major.description!,
-                      style: const TextStyle(
-                        color: Colors.white,
-                        height: 1.5,
-                        fontFamily: Assets.fontsSVNGilroyRegular,
+                    GridView.builder(
+                      shrinkWrap: true,
+                      physics: const NeverScrollableScrollPhysics(),
+                      itemCount: widget.major.techStack!.length,
+                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 6,
+                        childAspectRatio: 1,
+                        crossAxisSpacing: defaultPadding * 1.5,
+                        mainAxisSpacing: defaultPadding * 1.5,
                       ),
-                      textAlign: TextAlign.justify,
+                      itemBuilder: (context, index) => ClipRRect(
+                          borderRadius: BorderRadius.circular(15),
+                          child: Container(
+                            color: Colors.white,
+                            padding: const EdgeInsets.all(5),
+                            child: SvgPicture.network(
+                              widget.major.techStack![index],
+                              fit: BoxFit.cover,
+                            ),
+                          )
+                      ),
                     ),
                   ],
                 ),

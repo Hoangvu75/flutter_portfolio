@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio/model/lang_stat.dart';
+import 'package:portfolio/models/LangStat.dart';
 
 import '../../../generated/assets.dart';
 import '../../../generated/constants.dart';
@@ -17,13 +17,6 @@ class MostUsedProgrammingLanguage extends StatefulWidget {
 
 class _MostUsedProgrammingLanguageState extends State<MostUsedProgrammingLanguage> {
   List<LangStat> languageStat = [];
-  List<String> languageLogo = [
-    Assets.dartLogoPng,
-    Assets.javaLogoPng,
-    Assets.kotlinLogoPng,
-    Assets.tsLogoPng,
-    Assets.pythonLogoPng,
-  ];
 
   @override
   void initState() {
@@ -57,7 +50,6 @@ class _MostUsedProgrammingLanguageState extends State<MostUsedProgrammingLanguag
               return AnimatedLinearProgressIndicator(
                 percentage: languageStat[index].languageRate,
                 label: languageStat[index].languageName,
-                assetLogo: languageLogo[index],
               );
             },
           ),

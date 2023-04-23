@@ -10,18 +10,19 @@ class StringText {
       "about new developments in software engineering. I believe that this helps me to stay ahead of the curve "
       "and stay updated with the latest technologies.";
 
-  static const String majorAndroid = "I have about more than 6 months of experience with native Android "
-      "development using Java/Kotlin, and created many projects with high quality of UX, UI.";
-  static const String descriptionAndroid = "Native Apps Are More Interactive And Intuitive. These apps consider "
-      "their devices' OS environments, making them seem like an integral part of the device. The best advantage "
-      "of native mobile apps is a better user experience. Native applications are designed specifically for a "
-      "particular operating system.";
-  static const String majorFlutter = "Beside native Android development, I also have experience in Flutter "
-      "development, building cross-platform applications with great performance and beautiful design.";
-  static const String descriptionFlutter = "Flutter's code reusability allows you to write just one codebase and"
-      " use it on not only for mobile Android and iOS but even for web, desktop and more. This cuts development "
-      "time significantly, removes cost and enables you launch your app that much faster with high quality of "
-      "performance.";
+  static const String majorMobile = "I have about more than 6 months of experience with mobile development "
+      "in both Android and iOS, and created many projects with high quality of UX, UI.";
+  static const String descriptionMobile = "•	Be able of using Java, Kotlin, XML and Jetpack Compose in Android "
+      "development; have basic knowledge of SwiftUI and UIKit in iOS; experience with Flutter framework.\n•	"
+      "Implement MVVM in Android and iOS as well as using state management (BloC, GetX, Provider) in Flutter.\n•	"
+      "Work with data via RESTful API, Socket.\n•	Integrate mobile application with other cloud service such as "
+      "Firebase, AWS Amplify.";
+  static const String majorBackend = "Beside mobile development, I also have experience in backend development, "
+      "building server-side applications with great performance and scalable.";
+  static const String descriptionBackend = "•	Main language used: Javascript, typescript (Node.js) and Java "
+      "(Spring Boot), also know a little of C# (ASP.NET).\n•	Can work with Socket, JWT.\n•	Mostly use MongoDB as "
+      "database, also have basic knowledge of SQL Server.\n•	Understand MVC pattern and also have basic knowledge"
+      " of Microservice.\n•	Familiar with dev-tools: Git, Fork, Docker, Postman.";
 
   static const String pjCryptoFinanceDescription =
       "Application to help users following the information of crypto as well as tracking fluctuations. "
@@ -73,15 +74,15 @@ class StringText {
       " experience.";
   static const String mobileService =
       "         As a mobile application developer, I have a strong understanding of both "
-      "Flutter and Android development. I am proficient in creating engaging and "
+      "Java, Kotlin, Dart and Swift programing language. I am proficient in creating engaging and "
       "interactive mobile applications that provide a seamless user experience.\n\n"
-      "         I am confident in my ability to provide both Flutter and Android application "
+      "         I am confident in my ability to provide both native and cross-platform application "
       "development services. Whether you need a simple app for your business or a complex "
       "application for your organization, I have the skills and expertise to deliver a "
       "high-quality solution that meets your needs and exceeds your expectations.";
   static const String backendService = "As a seasoned software developer, I am proud to offer my expertise in "
       "backend development to clients and organizations. I have extensive experience with a variety of "
-      "programming languages and technologies, including Node.js, Express.js, MongoDB, and Firebase.\n\nWith my "
+      "programming languages and technologies, including Node.js, Spring Boot and ASP.NET.\n\nWith my "
       "expertise in these technologies, I am well equipped to provide high-quality backend development services "
       "to clients and organizations. Whether you are looking to build a new application from scratch, or to "
       "enhance an existing one, I am confident that I can help you achieve your goals and deliver a solution "
