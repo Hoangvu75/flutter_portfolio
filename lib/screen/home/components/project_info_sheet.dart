@@ -6,7 +6,6 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../../generated/assets.dart';
 import '../../../generated/constants.dart';
-import '../../../models/Major.dart';
 import '../../../models/Project.dart';
 import '../../../responsive.dart';
 

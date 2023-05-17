@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/generated/constants.dart';
 import 'package:portfolio/responsive.dart';
 
-import '../../animation/main_slide.dart';
 import 'components/side_menu.dart';
 
 class MainScreen extends StatefulWidget {

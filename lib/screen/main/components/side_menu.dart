@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:portfolio/generated/constants.dart';
 import 'package:portfolio/screen/main/components/most_used_technologies.dart';
 import 'package:portfolio/screen/main/components/socials.dart';
