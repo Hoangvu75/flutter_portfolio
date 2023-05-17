@@ -2,9 +2,11 @@ import 'dart:js' as js;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_scale_tap/flutter_scale_tap.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../../../generated/assets.dart';
 import '../../../generated/constants.dart';
+import '../../../models/Major.dart';
 import '../../../models/Project.dart';
 import '../../../responsive.dart';
 
@@ -63,11 +65,49 @@ class ProjectInfoSheet extends StatelessWidget {
                         Text(
                           project.description!,
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                                height: 1.5,
-                                color: Colors.white,
-                                fontFamily: Assets.fontsSVNGilroyRegular,
-                              ),
+                            height: 1.5,
+                            color: Colors.white,
+                            fontFamily: Assets.fontsSVNGilroyRegular,
+                          ),
                           textAlign: TextAlign.justify,
+                        ),
+                        const SizedBox(
+                          height: defaultPadding * 2,
+                        ),
+                        Text(
+                          "Technical stack",
+                          style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                            color: Colors.white,
+                            fontFamily: Assets.fontsSVNGilroyBold,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: defaultPadding,
+                        ),
+                        GridView.builder(
+                          shrinkWrap: true,
+                          physics: const NeverScrollableScrollPhysics(),
+                          itemCount: project.techStack.length,
+                          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 5,
+                            childAspectRatio: 1,
+                            crossAxisSpacing: defaultPadding * 1.3,
+                            mainAxisSpacing: defaultPadding * 1.3,
+                          ),
+                          itemBuilder: (context, index) => ClipRRect(
+                              borderRadius: BorderRadius.circular(15),
+                              child: Container(
+                                color: Colors.white,
+                                padding: const EdgeInsets.all(5),
+                                child: SvgPicture.network(
+                                  project.techStack[index],
+                                  fit: BoxFit.cover,
+                                ),
+                              )
+                          ),
+                        ),
+                        const SizedBox(
+                          height: defaultPadding * 2,
                         ),
                         if (project.sourceCode != "")
                           Column(
@@ -84,9 +124,9 @@ class ProjectInfoSheet extends StatelessWidget {
                                       horizontal: defaultPadding * 2, vertical: defaultPadding),
                                   backgroundColor: primaryColor,
                                 ),
-                                child: Row(
+                                child: const Row(
                                   mainAxisSize: MainAxisSize.min,
-                                  children: const [
+                                  children: [
                                     Text(
                                       "Source code",
                                       style: TextStyle(
@@ -121,9 +161,9 @@ class ProjectInfoSheet extends StatelessWidget {
                                       horizontal: defaultPadding * 2, vertical: defaultPadding),
                                   backgroundColor: primaryColor,
                                 ),
-                                child: Row(
+                                child: const Row(
                                   mainAxisSize: MainAxisSize.min,
-                                  children: const [
+                                  children: [
                                     Text(
                                       "Video demo",
                                       style: TextStyle(
@@ -158,9 +198,9 @@ class ProjectInfoSheet extends StatelessWidget {
                                       horizontal: defaultPadding * 2, vertical: defaultPadding),
                                   backgroundColor: primaryColor,
                                 ),
-                                child: Row(
+                                child: const Row(
                                   mainAxisSize: MainAxisSize.min,
-                                  children: const [
+                                  children: [
                                     Text(
                                       "Play store",
                                       style: TextStyle(
@@ -195,9 +235,9 @@ class ProjectInfoSheet extends StatelessWidget {
                                       horizontal: defaultPadding * 2, vertical: defaultPadding),
                                   backgroundColor: primaryColor,
                                 ),
-                                child: Row(
+                                child: const Row(
                                   mainAxisSize: MainAxisSize.min,
-                                  children: const [
+                                  children: [
                                     Text(
                                       "Live demo",
                                       style: TextStyle(

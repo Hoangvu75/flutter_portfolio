@@ -56,7 +56,7 @@ class ProjectsGridView extends StatelessWidget {
   const ProjectsGridView({
     Key? key,
     this.crossAxisCount = 3,
-    this.childAspectRatio = 1.3,
+    this.childAspectRatio = 1.5,
   }) : super(key: key);
 
   final int crossAxisCount;
@@ -103,6 +103,7 @@ class ProjectCard extends StatelessWidget {
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
                       project.title!,
@@ -111,7 +112,9 @@ class ProjectCard extends StatelessWidget {
                             fontFamily: Assets.fontsSVNGilroySemiBold,
                           ),
                     ),
-                    const Spacer(),
+                    const SizedBox(
+                      height: defaultPadding,
+                    ),
                     Text(
                       project.description!,
                       maxLines: Responsive.isMobileLarge(context) ? 3 : 5,
@@ -136,8 +139,8 @@ class ProjectCard extends StatelessWidget {
                               },
                             );
                           },
-                          child: Row(
-                            children: const [
+                          child: const Row(
+                            children: [
                               Text(
                                 "More info",
                                 style: TextStyle(color: primaryColor, fontFamily: Assets.fontsSVNGilroyBold),

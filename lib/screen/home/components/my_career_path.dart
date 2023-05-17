@@ -30,6 +30,10 @@ class MyCareerPath extends StatelessWidget {
         "Serving as an IT teacher at Mindx Technology School, providing guidance and support to students "
             "in their technological education journey.",
         "Mar - 2023"),
+    TimeEvent(
+        "Joined SUGA Group as a backend developer specializing in node.js and spring boot, working in game server "
+            "infrastructure.",
+        "June - 2023"),
   ];
 
   @override

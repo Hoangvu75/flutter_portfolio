@@ -24,45 +24,25 @@ class StringText {
       "database, also have basic knowledge of SQL Server.\n•	Understand MVC pattern and also have basic knowledge"
       " of Microservice.\n•	Familiar with dev-tools: Git, Fork, Docker, Postman.";
 
-  static const String pjCryptoFinanceDescription =
-      "Application to help users following the information of crypto as well as tracking fluctuations. "
-      "Front-end with Flutter and back-end with node.js. Technology used:\n- Flutter\n- Node.js-\n- Express.js"
-      "\n- Github\n- Postman\n- Android Studio\n- Visual Studio Code";
-  static const String pjChatDescription =
-      "This is a normal chat application, to send messages, video call with others. I developed both front-end "
-      "and back-end.\n\nTechnology used:\n- Flutter\n- Firebase\n- Node.js\n- Express.js\n- MongoDB\n- Github\n-"
-      " Postman\n- Socket.io\n- Android Studio\n- Visual Studio Code";
-  static const String pjMovieDescription =
-      "Application for movie lovers, to catch information about trending and popular movies. Users can also "
-      "search for any movie they like.\n\nTechnology used:\n- Flutter\n- Postman\n- Github\n- Android Studio";
-  static const String cr7LandingPageDescription =
-      "A simple landing page introduce about Cristiano Ronaldo.\n\nTechnology used:\n- Flutter\n- Github\n- "
-      "Android Studio\n- HTML/CSS";
-  static const String pjSocialNetworkDescription =
-      "A simple social network, users can add friend, post status, chat and interact with others.\n\nTechnology "
-      "used:\n- Kotlin\n- Github\n- Firebase\n- Android Studio";
-  static const String pjLightNovelDescription =
-      "This is an application to read overview and buy light novels, can be used to search for novels as well as "
-      "following newest and popular novels\n\nTechnology used:\n- Flutter\n- Github\n- Android Studio";
+  static const String pjCryptoFinanceDescription = "Application to help users following the information of "
+      "crypto as well as tracking fluctuations.";
+  static const String pjChatDescription = "This is a normal chat application, to send messages, video call with "
+      "others.";
+  static const String pjOtherChatDescription = "Still other messaging application.";
+  static const String pjReadingComicsDescription = "Application for reading comics.";
+  static const String cr7LandingPageDescription = "A simple landing page introduce about Cristiano Ronaldo.";
+  static const String pjSocialNetworkDescription = "A simple social network, users can add friend, post status, "
+      "chat and interact with others.";
   static const String pjWeatherDescription =
       "Users can use this application to get information about weather at their location, and can also get data "
-      "of weather in anywhere on the world. This app using BLoC pattern.\n\nTechnology used:\n- Java\n- Kotlin\n- "
-      "Github\n- Android Studio";
-  static const String pjStudentManagerDescription =  "Backend project is a student management system that allows"
-      " users to perform various CRUD (Create, Read, Update, Delete) operations on a database of student records"
-      ". Using HTTP methods like GET, POST, PUT, and DELETE, users can add new students to the database, "
-      "retrieve a list of all students, update the information of an existing student, search for a student by "
-      "name, and delete a student record from the database.\n\nTechnology used:\n- TypeScript\n- Node.js\n"
-      "- Express.js\n- MongoDB\n- Github\n- Postman\n- Visual Studio Code";
+      "of weather in anywhere on the world.";
   static const String pjXinhxinhliveDescription =
       "This is an e-commerce application, users can use this application to livestream, advertise products, "
       "purchase, trade, put on sale everything such as clothes, electronic devices, cosmetics, housewares, food,"
-      " ... Xinhxinhlive is a project of FPT Telecom and I'm joined this as a mobile developer.\n\nTechnology "
-      "used:\n- Java\n- Fork\n- Gitlab\n- Postman\n- Android Studio";
+      " ... Xinhxinhlive is a project of FPT Telecom and I'm joined this as a mobile developer.";
   static const String pjTechdayDescription =
       "Techday 2022 is an application for FPT staff only, which used for FPT technology events tracking, "
-      "published on CH Play. I joined this project when I worked at FPT Telecom.\n\nTechnology used:\n- Flutter"
-      "\n- Fork\n- Gitlab\n- Postman\n- Android Studio";
+      "published on CH Play. I joined this project when I worked at FPT Telecom.";
 
   static const String webService =
       "         Beside a mobile developer, I also have a solid foundation in the basics of web "
